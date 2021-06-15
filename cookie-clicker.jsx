@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import {useObject} from "./useObject.js"
-import {test, expect, toEqual, allTestResults} from "./test-framework.js"
+import {test, expect, toEqual} from "./test-framework.js"
 
 type Game = {|
   cookies: () => number,
@@ -64,8 +64,6 @@ test("a game", {
     expect(game.cookies(), toEqual(0))
   },
 })
-
-console.log("test results:", allTestResults())
 
 export function GameUI(): React.Node {
   const [game, withUpdate] = useObject(newGame)
