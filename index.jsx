@@ -7,14 +7,8 @@ import {GameUI} from './cookie-clicker.jsx'
 import {allTestResults} from "./test-framework.js"
 
 ReactDOM.render(
-  <App/>,
-  document.body,
+  <GameUI/>,
+  document.getElementById("root"),
 )
-
-function App(): React.Node {
-  return <>
-    <GameUI />
-  </>
-}
 
 console.log("test results:", allTestResults())
