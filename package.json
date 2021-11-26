@@ -1,6 +1,7 @@
 {
   "name": "cookie",
   "version": "1.0.0",
+  "source": "useModel.js",
   "main": "dist/cookie.js",
   "license": "MIT",
   "scripts": {
